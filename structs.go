@@ -524,6 +524,14 @@ func FillMap(s interface{}, out map[string]interface{}) {
 	New(s).FillMap(out)
 }
 
+func StringMap(s interface{}) map[string]string {
+	return New(s).StringMap()
+}
+
+func FillStringMap(s interface{}, out map[string]string) {
+	New(s).FillStringMap(out)
+}
+
 // Values converts the given struct to a []interface{}. For more info refer to
 // Struct types Values() method.  It panics if s's kind is not struct.
 func Values(s interface{}) []interface{} {
